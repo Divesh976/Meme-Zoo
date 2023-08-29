@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+}
+#Introduction {
+  font-family: sans-serif;
+  color: #000000;
+}
+.Hello{
+  font-size: 50px;
+  font-weight: 750;
+  color: rgb(230, 44, 230);
+  border: solid 10px;
+  background-color: rgb(245, 211, 245);
+  border-color: rgb(230, 44, 230);
+  border-radius: 7px;
+  margin-left: 600px;
+  margin-top: 200px;
+  transition: all 0.5s;
+}
+.Hello:hover {
+  transform: translateY(-10px);
+  background-color: rgb(230, 44, 230);
+  color: white;
+}
+@keyframes Slideinleft {
+  from{
+    transform: translateX(-600px);
+  }
+
+  to{
+    transform: translateX(0px);
+  }
+}
+#Dot{
+  margin-left: 600px;
+  margin-top: 200px;
+  animation-name: Slideinleft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
